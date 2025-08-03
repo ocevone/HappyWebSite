@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Liste de Cadeaux d'Anniversaire</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome pour les icônes -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts Mignonne -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chewy&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-family: 'Chewy', cursive;">
+
+    <!-- Toast d'introduction -->
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+        <div id="oceToast" class="toast show text-bg-light border border-pink rounded-4 shadow-lg w-100" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body d-flex flex-column flex-md-row align-items-start gap-3 p-4">
+                <img id="toastImage" src="image/ChibiMe.png" alt="Pixel Océane">
+                <div class="flex-grow-1">
+                    <p class="mb-3">Coucou 💖 J’aimerais te remercier de venir à mon anniversaire !<br>
+                    Ce site ne sert pas à vous forcer à prendre un cadeau, il est juste là pour m’amuser et peut-être vous aider à en choisir un 🎁<br>
+                    J’ai pris beaucoup de plaisir à le coder et j’espère que tu kifferas aussi le visiter !</p>
+                    <div class="d-flex justify-content-end gap-2">
+                    <button type="button" class="toast-btn-rose" onclick="reponseGentille()">Oui je sais t'inquiète Océ</button>
+                    <button type="button" class="toast-btn-sassy" onclick="reponseMich()">Ouai c’est ça la michto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header global -->
+    <nav class="navbar navbar-light bg-light mb-4 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="image/CutieBowTie.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+                <span class="fs-3">Anniversaire d'Océane</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4">
+                Ma Liste de Cadeaux
+            </h1>
+            <p class="lead">Les petits bonheurs qui me feront sourire pour mon anniversaire</p>
+        </header>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/AnimalCrossing.png" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Lego</h5>
+                        <p class="card-text">Vous ai je déja parlez de mon amour pour les légo? Les 3en1 sont tellement cool impossible de se tromper ou de faire des doublons!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/PopPokemon.jpg" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Figurine FunkoPop Pokemon</h5>
+                        <p class="card-text">Un jour je serai la meilleure dresseuse! J'en ai actuellement une dixaine! Mais il y en a plus encore! Aider moi a tous les attraper!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/PerlesARepasser.jpg" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Perles a repasser</h5>
+                        <p class="card-text">Ici cest passion pixel art! Si vous voulez m'encourager dans mon addictions aux hobbies diverces et varié c'est ici que ca se passe! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/unstable-unicorns-nsfw.jpg" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Jeux de socièté</h5>
+                        <p class="card-text">Est ce que j'ai assès de jeux? Jamais! Allez donc faire un tour dans le meilleur magasin de la nouvelle caledonie : Ludik! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/DesJDR.webp" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Un set de dés</h5>
+                        <p class="card-text">Je pense être touchée par une malédiction qui altère mon jet de dés en JDR! Rompez la malediction sil vous plait! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/labubu.webp" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Labubu coloré</h5>
+                        <p class="card-text">Je ne peux pas avoir de chat. Une vie de souffrance je vous le dis! Mais je peux au moins me consoler avec un labubu! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/MousePad.webp" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Tapis de souris XXL</h5>
+                        <p class="card-text">Savez-vous a quelle point cest dure de jouer sur un mini tapis de souris?! Je suis sur que cest pour ca que je loupe mes kills!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/BoucleDoré.webp" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Boucle d'orreil doré</h5>
+                        <p class="card-text">Votre tysmey sucré préféré n'as plus de bijoux doré! Aidez la a rester sucré en participant a son embelissement!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/BaretteFleurs.jpg" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Barette fleuris</h5>
+                        <p class="card-text">Je suis amoureuse de barette fleuris! Petites ou grosses elle vont toutes parfaitement bien dans mes cheveux! Rendez moi belle!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/Peluche.jpg" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Peluche</h5>
+                        <p class="card-text">Vous avez envie de me faire des calins mais vous êtes un grand timide? C'est la solution pour vous: faite moi un calin par procuration!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/verre.jpg" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Un jolie verre</h5>
+                        <p class="card-text">Savez vous que derière ce voeux ce cache une geek complétement désydrater? C'est scientifiques les paille aide a boire plus d'eau! Si si j'vous jure...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="image/bons-d-achat.webp" class="card-img-top" alt="Nom du cadeau">
+                    <div class="card-body">
+                        <h5 class="card-title">Bon d'achat</h5>
+                        <p class="card-text">Pas de temps? Je vous le dis le bon d'achat ca sauve la vie! Surtout chez Bloomy, Sugoii, Muscovado, Lego ou Ludik! </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer mignon -->
+    <footer class="bg-light text-center py-4 mt-5 border-top">
+        <div class="container">
+            <p class="mb-0">Merci d'avoir visité ma liste de cadeaux 
+                                <img src="image/Cadeau.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+
+            </p>
+            <small class="text-muted">Fait avec amour et pixel par Océane © 2025</small>
+        </div>
+    </footer>
+
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function fermerToast() {
+  const toast = document.getElementById("oceToast");
+  toast.classList.remove("show");
+  toast.classList.add("hide");
+  setTimeout(() => {
+    toast.parentElement.remove();
+  }, 500);
+}
+
+      function reponseGentille() {
+  const image = document.getElementById("toastImage");
+  image.src = "image/HappyLapi.png";
+  image.alt = "repondLapi";
+  image.style.width = "96px";
+  image.style.height = "96px";
+  image.style.imageRendering = "pixelated";
+
+  document.querySelector(".toast-body p").innerHTML =
+    "Merci t'es trop chou !<br> J’espère que tu vas rigoler en regardant tout ça ";
+
+  // Fermer le toast après réponse
+  document.querySelector('.toast-body .d-flex').innerHTML = '<button class="btn btn-primary mt-3 mx-auto" onclick="fermerToast()">Fermer</button>';
+}
+
+      function reponseMich() {
+  const image = document.getElementById("toastImage");
+  image.src = "image/FuckinLapi.png";
+  image.alt = "Réaction michto";
+  image.style.width = "96px";
+  image.style.height = "96px";
+  image.style.imageRendering = "pixelated";
+
+  document.querySelector(".toast-body p").innerHTML =
+    "Toi t’as pas d’argent, de quoi tu parles Kaitae 😤😂";
+
+  document.querySelector('.toast-body .d-flex').innerHTML = '<button class="btn btn-primary mt-3 mx-auto" onclick="fermerToast()">Fermer</button>';
+}
+    </script>
+
+</body>
+</html>
+
+
